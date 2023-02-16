@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 5</h1>
+		<p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+		</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let currentSeconds = parseFloat(prompt('введіть кількість секунд з початку доби', 'с'))
+			// 2. Робимо обчислення
+			let minutesQantity = Math.round((currentSeconds/60)*100) / 100
+			let hoursQantity = Math.round((minutesQantity/60)*100) / 100
+			// 3. Виводимо результат
+			document.write(`
+			<p class="minutes">Час складе ${minutesQantity} хв</p>
+			<p class="hours">Час складе ${hoursQantity} год</p>
+			`)
+		</script>
+	</body>
+</html>

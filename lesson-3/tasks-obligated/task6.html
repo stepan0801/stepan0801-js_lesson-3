@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 6</h1>
+		<p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+		</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let currentDayNumber = parseInt(prompt('введіть порядковий номер дня тижня','1 - 7'))
+			// 2. Робимо обчислення і виводимо результат
+			switch (currentDayNumber) {
+				case 1: document.write(`<p>Це понеділок</p>`)
+					break;
+				case 2: document.write(`<p>Це вівторок</p>`)
+					break;
+				case 3: document.write(`<p>Це середа</p>`)
+					break;
+				case 4: document.write(`<p>Це четвер</p>`)
+					break;
+				case 5: document.write(`<p>Це п'ятниця</p>`)
+					break;
+				case 6: document.write(`<p>Це субота</p>`)
+					break;
+				case 7: document.write(`<p>Це неділя</p>`)
+					break;
+				default: document.write(`<p>невірно введені дані</p>`)
+					break;
+			}
+		</script>
+
+	</body>
+</html>

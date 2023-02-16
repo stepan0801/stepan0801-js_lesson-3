@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 7</h1>
+		<p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься.</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let currentMonthNumber = parseInt(prompt('введіть порядковий номер місяця','1 - 12'))
+			// 2. Робимо обчислення і виводимо результат
+			if ((currentMonthNumber === 12) || (currentMonthNumber <=2))
+			document.write(`Це зима`)
+			else if ((currentMonthNumber > 2) && (currentMonthNumber <=5))
+			document.write(`Це весна`)
+			else if ((currentMonthNumber > 5) && (currentMonthNumber <=8))
+			document.write(`Це літо`)
+			else if ((currentMonthNumber > 8) && (currentMonthNumber <=11))
+			document.write(`Це осінь`)
+			else
+			document.write(`Невірно введені дані`)
+		</script>
+	</body>
+</html>

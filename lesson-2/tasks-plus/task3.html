@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 3</h1>
+		<p>З клавіатури вводяться вартість одиниці та кількість одиниць двох товарів. Вивести на екран вартість кожного з видів товарів окремо і загальну вартість.
+		</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let firstProductPrice = parseFloat(prompt('введіть ціну за одиницю товару', 'грн'))
+			let firstProductQuantity = parseInt(prompt('введіть кількість даного товару', 'шт'))
+			let secondProductPrice = parseFloat(prompt('введіть ціну за одиницю товару', 'грн'))
+			let secondProductQuantity = parseInt(prompt('введіть кількість даного товару', 'шт'))
+			// 2. Робимо обчислення
+			let firstProductPriceFull = parseFloat(firstProductPrice * firstProductQuantity)
+			let secondProductPriceFull = parseFloat(secondProductPrice * secondProductQuantity)
+			let totalPrice = parseFloat(firstProductPriceFull + secondProductPriceFull)
+			// 3. Виводимо результат
+
+			document.write(`
+			<p class="total-first-price">вартість першого товару складе ${firstProductPriceFull}грн</p>
+			<p class="total-second-price">вартість другого товару складе ${secondProductPriceFull}грн</p>
+			<p class="total-price">загальна складе ${totalPrice}грн</p>
+			`)
+		</script>
+	</body>
+</html>

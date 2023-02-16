@@ -1,0 +1,58 @@
+
+
+body{
+	width: 100%;
+	background-color: rgb(1, 9, 41);
+	color: wheat;
+	padding: 25px;
+}
+p{
+	background-color: rgb(10, 64, 68);
+	font-size: 23px;
+	border: 2px solid lightgreen;
+	width: 700px;
+	padding: 7px;
+}
+h1{
+	margin: 0 auto;
+	width: 300px;
+	font-size: 28px;
+}
+h2 {
+	margin: 0 auto;
+	width: 300px;
+	font-size: 26px;
+}
+h3 {
+	margin: 0 auto;
+	width: 300px;
+	font-size: 24px;
+}
+
+a:visited{
+	color: rgb(59, 31, 59);
+	
+}
+ol li {
+		background-color: rgb(127, 205, 211);
+		font-size: 23px;
+		border: 2px solid lightgreen;
+		width: 900px;
+		color: rgb(243, 177, 243);
+		padding-left: 25px;
+}
+
+ol li:not(:last-child){
+	margin-bottom: 25px;
+}
+
+table{
+	border: 3px solid wheat;
+}
+th, td, tr{
+	width: 200px;
+	text-align: center;
+}
+.main-title{
+	width: 800px;
+}

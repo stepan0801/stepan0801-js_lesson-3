@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 2</h1>
+		<p>З клавіатури вводиться розмір заробітної плати та розмір прожиткового мінімуму. Визначити розмір соціальної допомоги (ввжаємо, що заробітна плата є меншою).
+		</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let payment = parseFloat(prompt('введіть Вашу заробітню платню', 'грн'))
+			let costOfLiving = parseFloat(prompt('введіть розмір прожиткового мінімуму', 'грн'))
+			// 2. Робимо обчислення
+			let socialHelp = parseFloat(costOfLiving - payment)
+			// 3. Виводимо результат
+
+			document.write(`
+			<p class="social-help">розмір соціальної допомоги складе ${socialHelp}грн</p>
+			`)
+		</script>
+
+	</body>
+</html>

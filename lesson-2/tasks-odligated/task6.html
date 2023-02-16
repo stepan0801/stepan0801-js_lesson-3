@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача 6</h1>
+		<p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+		</p>
+		<script>
+			// 1. Вводимо необхідні дані
+			let firstPoductPrice = parseFloat(prompt('Введіть ціну першого товару', 'грн'))
+			let firstPoductQuantity = parseInt(prompt('Введіть кількість першого товару', 'шт'))
+			let secondPoductPrice = parseFloat(prompt('Введіть ціну другого товару', 'грн'))
+			let secondPoductQuantity = parseInt(prompt('Введіть кількість другого товару', 'шт'))
+			let thirdPoductPrice = parseFloat(prompt('Введіть ціну третього товару', 'грн'))
+			let thirdPoductQuantity = parseInt(prompt('Введіть кількість третього товару', 'шт'))
+			// 2. Робимо обчислення
+			let firstFullPrice = parseFloat(firstPoductPrice * firstPoductQuantity)
+			let secondFullPrice = parseFloat(secondPoductPrice * secondPoductQuantity)
+			let thirdFullPrice = parseFloat(thirdPoductPrice * thirdPoductQuantity)
+			const VAT = 0.2;
+			let valueVAT = (firstFullPrice + secondFullPrice + thirdFullPrice) * VAT
+			let totalPrice = (firstFullPrice + secondFullPrice + thirdFullPrice)
+			// 3. Виводимо результат
+			document.write(`
+			<p> Товар №1 ${firstPoductPrice} грн * ${firstPoductQuantity} шт = ${firstFullPrice} грн</p>
+			<p>Товар №2 ${secondPoductPrice} грн * ${secondPoductQuantity} шт = ${secondFullPrice} грн</p>
+			<p>Товар №3 ${thirdPoductPrice} грн * ${thirdPoductQuantity} шт = ${thirdFullPrice} грн</p>
+			<p>Сума ПДВ 20%, ${valueVAT} грн</p>
+			<p>Загальна вартість ${totalPrice} грн</p>
+			`)
+		</script>
+
+	</body>
+</html>
